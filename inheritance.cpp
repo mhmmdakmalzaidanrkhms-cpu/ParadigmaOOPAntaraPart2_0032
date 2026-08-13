@@ -29,4 +29,9 @@ class pelajar : public orang {
 public:
     //deklarasi member variabel dari class pelajar
     string sekolah;
+
+    //pembuatan constructor dan destructor dari class pelajar
+    pelajar(string pNama, string pSekolah) :orang(pNama), sekolah(pSekolah) {
+        cout << "Pelajar dibuat\n" << endl;
+    }
 };
